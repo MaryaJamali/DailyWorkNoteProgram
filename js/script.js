@@ -22,6 +22,11 @@ function addListAfterClick(event) {
     if (inputValidation() > 0) {
         createListElement();
     }
+    function confirmDone() {
+        // When the text is clicked, take this feature that we defined in CSS, if it has it, and give it if it doesn't have it.
+        li.classList.toggle("confirm-done");
+    }
+    li.addEventListener("click",confirmDone);
 }
 
 function addListAfterClickKeyPress(event) {

@@ -85,6 +85,11 @@ li:hover {
     background: #b6c0c2;
 }
 
+.confirm-done {
+    background: #51DF70 !important;
+    color: #00891E;
+}
+
 .confirm-todo {
     font-size: 18px;
     color: #4b4b4b;
