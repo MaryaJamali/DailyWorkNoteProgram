@@ -1,12 +1,11 @@
 // Find page elements
 var addButton = document.getElementById("add-btn");
 var todoInput = document.getElementById("todo-input");
-var ul = document.getElementById("todo-list");
-var item = document.getElementsByTagName("li");
+var ul = document.querySelector("ul");
 
 function inputValidation() {
-
-    return todoInput.value.length;
+    // trim() --> This method removes extra spaces at the beginning and end of the entered text.
+    return todoInput.value.trim().length;
 }
 
 function createListElement() {
@@ -17,7 +16,8 @@ function createListElement() {
     todoInput.value = "";
 }
 
-function addListAfterClick() {
+function addListAfterClick(event) {
+    event.preventDefault();
     // If there was text in the input
     if (inputValidation() > 0) {
         createListElement();

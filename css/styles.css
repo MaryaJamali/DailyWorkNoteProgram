@@ -70,7 +70,19 @@ ul {
 }
 
 li {
+    list-style: none;
+    padding: 10px 20px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid #96aaad;
+    border-radius: 5px;
     margin-bottom: 10px;
+    background: #d9e5e7;
+}
+
+li:hover {
+    background: #b6c0c2;
 }
 
 .confirm-todo {
