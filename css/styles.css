@@ -87,7 +87,8 @@ li:hover {
 
 .confirm-done {
     background: #51DF70 !important;
-    color: #00891E;
+    border: 2px solid #0e631c;
+    color: #002207;
 }
 
 .confirm-todo {

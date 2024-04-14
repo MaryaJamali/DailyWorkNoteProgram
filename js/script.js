@@ -2,6 +2,7 @@
 var addButton = document.getElementById("add-btn");
 var todoInput = document.getElementById("todo-input");
 var ul = document.querySelector("ul");
+var item = document.getElementsByTagName("li");
 
 function inputValidation() {
     // trim() --> This method removes extra spaces at the beginning and end of the entered text.
@@ -14,6 +15,12 @@ function createListElement() {
     li.appendChild(document.createTextNode(todoInput.value));
     ul.appendChild(li);
     todoInput.value = "";
+
+    function confirmDone() {
+        // When the text is clicked, take this feature that we defined in CSS, if it has it, and give it if it doesn't have it.
+        li.classList.toggle("confirm-done");
+    }
+    li.addEventListener("click", confirmDone);
 }
 
 function addListAfterClick(event) {
@@ -22,11 +29,6 @@ function addListAfterClick(event) {
     if (inputValidation() > 0) {
         createListElement();
     }
-    function confirmDone() {
-        // When the text is clicked, take this feature that we defined in CSS, if it has it, and give it if it doesn't have it.
-        li.classList.toggle("confirm-done");
-    }
-    li.addEventListener("click",confirmDone);
 }
 
 function addListAfterClickKeyPress(event) {
