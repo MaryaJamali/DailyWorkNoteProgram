@@ -37,3 +37,49 @@ body {
     font-size: 22px;
     margin-left: 5px;
 }
+
+form {
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #38af3c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #2fcc37;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.confirm-todo {
+    font-size: 18px;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+}
+
+.delete-todo {
+    font-size: 16px;
+    color: #777777;
+}
