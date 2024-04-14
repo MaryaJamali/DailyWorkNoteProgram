@@ -8,6 +8,12 @@ function inputValidation() {
     return input.value.length;
 }
 
+function addListAfterClick() {
+    // If there was text in the input
+    if (inputValidation() > 0) {
+        createListElement();
+    }
+}
 
 // Add event
 addButton.addEventListener("click", addListAfterClick);
