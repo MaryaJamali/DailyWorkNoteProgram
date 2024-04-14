@@ -83,3 +83,24 @@ li {
     font-size: 16px;
     color: #777777;
 }
+
+footer {
+    background-color: #dbdada;
+    color: #050505;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #080808;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
