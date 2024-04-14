@@ -21,6 +21,11 @@ function createListElement() {
         li.classList.toggle("confirm-done");
     }
     li.addEventListener("click", confirmDone);
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.appendChild(document.createTextNode("X"));
+    li.appendChild(deleteBtn);
+    deleteBtn.addEventListener("click",deleteListItem);
 }
 
 function addListAfterClick(event) {

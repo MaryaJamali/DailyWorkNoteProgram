@@ -85,6 +85,15 @@ li:hover {
     background: #b6c0c2;
 }
 
+li>button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: #323133;
+    font-weight: 800;
+}
+
 .confirm-done {
     background: #51DF70 !important;
     border: 2px solid #0e631c;
