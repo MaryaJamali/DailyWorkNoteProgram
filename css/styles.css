@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    background: url("/img/background/background-1.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.title {
+    color: #222222;
+}
+
+.title:after {
+    content: "📝";
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 5px;
+}
