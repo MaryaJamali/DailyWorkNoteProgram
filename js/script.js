@@ -5,7 +5,16 @@ var ul = document.getElementById("todo-list");
 var item = document.getElementsByTagName("li");
 
 function inputValidation() {
-    return input.value.length;
+
+    return todoInput.value.length;
+}
+
+function createListElement() {
+    // Creating the li tag and setting its value as text and adding it to the ul tag
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(todoInput.value));
+    ul.appendChild(li);
+    todoInput.value = "";
 }
 
 function addListAfterClick() {
@@ -21,6 +30,7 @@ function addListAfterClickKeyPress(event) {
         createListElement();
     }
 }
+
 // Add event
 addButton.addEventListener("click", addListAfterClick);
 todoInput.addEventListener("keypress", addListAfterClickKeyPress);
