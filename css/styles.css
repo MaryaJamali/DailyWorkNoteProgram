@@ -100,6 +100,10 @@ li>button {
     color: #002207;
 }
 
+.delete-done {
+    display: none;
+}
+
 .confirm-todo {
     font-size: 18px;
     color: #4b4b4b;
