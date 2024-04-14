@@ -15,6 +15,12 @@ function addListAfterClick() {
     }
 }
 
+function addListAfterClickKeyPress(event) {
+    // If there was a text in the input and the "Enter --> 13" key was pressed
+    if (inputValidation() > 0 && event.which === 13) {
+        createListElement();
+    }
+}
 // Add event
 addButton.addEventListener("click", addListAfterClick);
 todoInput.addEventListener("keypress", addListAfterClickKeyPress);
