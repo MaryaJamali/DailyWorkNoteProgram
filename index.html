@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Work Note Program</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="logo">
+            <a href="https://github.com/MaryaJamali"><img src="img/logo/logo-1.png" alt="Jamali"></a>
+        </div>
+        <h1 class="title">Daily Work Note Program</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add New Task...">
+            <button id="add-btn">Add</button>
+        </form>
+
+        <!-- Empty List -->
+        <div class="row">
+            <div class="list-items">
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="help-text">
+                <h1 class="confirm-todo">At the end of the day, confirm the work done by clicking on it .</h1>
+                <h1 class="delete-todo">You can also click on the corner cross to delete the task .</h1>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>Email: <a href="mailto:m.jamali16@yahoo.com">m.jamali16@yahoo.com</a></p>
+                <p>GitHub: <a href="https://github.com/MaryaJamali">Miss Jamali</a></p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
